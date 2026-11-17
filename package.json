@@ -1,0 +1,16 @@
+{
+  "name": "distel-agi",
+  "version": "0.1.0",
+  "description": "ZDOS Discord + Telegram + X bridge",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "telegraf": "^4.16.3",
+    "dotenv": "^16.4.5"
+  }
+}
