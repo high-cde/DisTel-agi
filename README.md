@@ -1,21 +1,24 @@
 # DisTel-agi — ZDOS Unified Platform Bridge
 
-**Discord + Telegram + X** synchronization layer for the ZDOS sovereign ecosystem.
+**Discord ↔ Telegram ↔ X** synchronization layer.
 
-## Purpose
-Single source of truth for announcements, quests, roles and community activity across:
-- X (@ZDOS_Core)
-- Discord (ZDOS official server)
-- Telegram (channels + Mini Apps, including VelvetHub)
+## Features
+- Announcement sync Discord ↔ Telegram
+- X webhook integration
+- Module unification registry
+- Sovereign, no custodial keys
 
-## Architecture
-- Lightweight Node.js / TypeScript bot
-- Wallet-based identity (Phantom / Solana)
-- Selective sync (announcements only by default)
-- No custodial keys
+## Setup
+1. Copy `.env.example` → `.env`
+2. Fill tokens and channel IDs
+3. `npm install && npm start`
 
-## Status
-Initializing — ZDOS 1.4 unification layer.
+## Commands
+- Discord: `!announce your message`
+- Telegram: any message in the linked channel
+
+## Modules
+See `src/modules.js` for the central registry.
 
 ---
-© ZDOS — high-cde
+ZDOS 1.4 · high-cde
